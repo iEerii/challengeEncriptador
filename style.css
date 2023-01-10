@@ -36,6 +36,7 @@ button {
 .container {
     align-items: center;
     display: flex;
+    justify-content: space-evenly;
     height: 100vh;
     position: relative;
 }
@@ -44,7 +45,8 @@ button {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    max-width: 400px;
+    width: 100%;
 }
 
 .message-container textarea {
