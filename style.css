@@ -1,0 +1,159 @@
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(/img/fondo1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+textarea,
+input::placeholder, 
+textarea::placeholder,
+button {
+    color: black;
+    font-family: 'Fredoka One', cursive;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.color-icon {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(5322%) hue-rotate(320deg) brightness(92%) contrast(100%);
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.message-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.message-container textarea {
+    background: rgba(255, 109, 40, .3);
+    border: 5px solid black;
+    border-radius: 4px;
+    padding: 15px;
+    resize: none;
+    width: 470px;
+}
+
+.message-container textarea:focus {
+    outline: none;
+}
+
+#text-lower{
+    display: none;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container p {
+    font-family: 'Bangers', cursive;
+    margin-bottom: 10px;
+}
+
+.button-container button, #copy-btn {
+    background-color: #ECECEC;
+    border: 5px solid black;
+    border-radius: 15px;
+    color: #FF1818;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 12px;
+    text-shadow: 2px 2px black;
+    transition: all .2s ease-in;
+}
+
+.button-container button:hover {
+    border: 5px solid #FF1818;
+    color: #5463FF;
+}
+
+.result-container {
+    align-items: center;
+    background: rgba(255, 109, 40, .3);
+    border: 5px solid black;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bangers', cursive;
+    justify-content: center;
+    min-height: 450px; /*pendiente en mq*/
+    min-width: 400px; /*pendiente en mq*/
+    padding: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.caveat-one {
+    color: #EA047E;
+    font-size: 30px;
+    margin-top: 20px;
+    text-shadow: 2px 2px black;
+}
+
+.caveat-two {
+    color: #00ABB3;
+    font-family: 'Fredoka One', cursive;
+    font-size: 15px;
+    margin-top: 20px;
+    text-shadow: 2px 2px black;
+}
+
+#copy-btn {
+    bottom: 10px;
+    display: none;
+    position: absolute;
+}
+
+#copy-btn:hover {
+    border: 5px solid #FF1818;
+    color: #5463FF;
+}
+
+footer {
+    font-family: 'Fredoka One', cursive;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media all and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .message-container {
+        margin-top: 50px;
+    }
+
+    .result-container {
+        margin: 10px 0;
+        margin-bottom: 40px;
+    }
+}
