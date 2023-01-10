@@ -53,7 +53,8 @@ button {
     border-radius: 4px;
     padding: 15px;
     resize: none;
-    width: 470px;
+    max-width: 470px;
+    width: 100%;
 }
 
 .message-container textarea:focus {
@@ -101,11 +102,12 @@ button {
     flex-direction: column;
     font-family: 'Bangers', cursive;
     justify-content: center;
-    min-height: 450px; /*pendiente en mq*/
-    min-width: 400px; /*pendiente en mq*/
+    min-height: 450px;
+    max-width: 400px;
     padding: 25px;
     position: relative;
     text-align: center;
+    width: 100%;
 }
 
 .caveat-one {
@@ -135,11 +137,30 @@ button {
 }
 
 footer {
+    align-items: center;
+    bottom: 5px;
+    display: flex;
     font-family: 'Fredoka One', cursive;
     position: absolute;
-    bottom: 10px;
     left: 50%;
+    text-align: center;
     transform: translateX(-50%);
+}
+
+footer a {
+    color: #00ABB3;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    transform: all .3s ease;
+}
+
+footer a:hover {
+    color: #EA047E;
+}
+
+.footer-logo {
+    width: 30px;
 }
 
 @media all and (max-width: 1024px) {
@@ -155,5 +176,18 @@ footer {
     .result-container {
         margin: 10px 0;
         margin-bottom: 40px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .message-container {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    footer {
+        align-items: baseline;
+        font-size: 11px;
     }
 }
