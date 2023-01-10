@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cabin+Sketch&family=Fredoka+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador de texto</title>
+    </head>
+    <body>
+        <figure class="logo">
+            <img class="color-icon" src="/img/Logo.svg" alt="">
+        </figure>
+        <main class="container">
+            <section class="message-container">
+                <textarea placeholder="Ingrese el texto aquí" name="" id="normal-text" cols="30" rows="10"></textarea>
+                <div class="button-container">
+                    <p id="text-lower">&#10071; Solo minúsculas y sin acentos</p>
+                    <button id="encrypt-btn">Encriptar</button>
+                    <button id="decrypt-btn">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="result-container">
+                <div id="block-hidden">
+                    <img src="/img/Muñeco.svg" alt="" id="doll-image">
+                    <p class="caveat-one" >Ningún mensaje fue encontrado</p>
+                    <p class="caveat-two" >Ingresa el texto que desees encriptar y desencriptar</p>
+                </div>
+                <p id="encrypted-text"></p>
+                <button id="copy-btn">Copiar</button>
+            </section>
+            <footer>
+                Hecho por Ericka Ponce 
+            </footer>
+        </main>
+
+        <script src="app.js"></script>
+        
+    </body>
+</html>
